@@ -1,0 +1,38 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+out/
+.next/
+coverage/
+*.tsbuildinfo
+
+# Local research data: other people's issue text, fetched on demand.
+# The scripts and the generated analysis are committed; the raw JSON is not.
+research/data/*.json
+!research/data/README.md
+
+# Recordings and diagnostics can be large or private
+*.vntr
+*.tmogtrace
+*.log
+diagnostics-*.json
+
+# Local settings
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Arena workspace internals
+.arena/
