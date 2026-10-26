@@ -13,7 +13,7 @@
 | Editions | Free; TMOG Pro, one-time **$39.95**, three activations, any mix of OS | [A] |
 | Merchant of record | Lemon Squeezy | [A] |
 | Public issue tracker | `PlummersSoftwareLLC/tmog-feedback` — 1,548 reports, 2026-07-31 → 2026-10-26 | [D] |
-| Source availability | Closed. A request to open-source it (#1568) is open. The repo URL embedded in the Linux build returns 404 (private). | [D][C] |
+| Source availability | Closed. A request to open-source it (#1568) is open. The repo URL embedded in the Linux build returns 404; no public source repository was found, which is consistent with a private repository but does not prove one exists. | [D][C] |
 | Origin story | Built with an AI coding agent from a ~107-page specification, as a test of whether a modern tool could produce a native Windows-class application | [E] |
 
 ## 2. Timeline

@@ -23,7 +23,7 @@ Every claim this dossier makes about the original traces to a row here. **Class:
 | --- | --- | --- | --- | --- |
 | E-10 | One shared C++20 core; Swift+AppKit on macOS, C++/Win32 on Windows, C++/Qt 6 on Linux; no Electron or web view | https://tmog.org/ (fact 01) | A | High |
 | E-11 | Linux binary links Qt6 Widgets/Gui/Core/Svg/Network/OpenGL/Multimedia and `libsystemd`; bundles Qt 6.8.3; verifies licenses with Ed25519 verify-only code and a first-party SHA-512 | RECON notes, https://github.com/mikedesu/evildojo-tmog/blob/master/docs/RECON.md | C | Medium |
-| E-12 | Embedded repo URL `github.com/PlummersSoftwareLLC/TMOG` returns 404; source is private | Same RECON notes; confirmed by fetching the URL | C | Medium |
+| E-12 | Embedded repo URL `github.com/PlummersSoftwareLLC/TMOG` returns 404; no public source repository found (consistent with private, not proof of it) | Same RECON notes; URL fetched 2026-10-26 | C | Medium |
 | E-13 | Linux requires glibc ≥ 2.35, libstdc++ ≥ 12; `.deb`/`.tar.gz` need system Qt ≥ 6.4; RHEL 9 rebuilds cannot run it | https://tmog.org/linux.html | A | High |
 | E-14 | Windows targets Windows 11 x64 and ARM64; macOS 14+ on Apple silicon and Intel; signed and notarized | https://tmog.org/ | A | High |
 | E-15 | Package set: macOS DMG; Windows EXE installer + zip, x64 and ARM64; Linux AppImage, deb, tar.gz, x64 and arm64 | Download cards, https://tmog.org/ | A | High |
@@ -118,6 +118,7 @@ Every claim this dossier makes about the original traces to a row here. **Class:
 | E-92 | The list tags each case REA / AI-RE / Rebuild / Claim? and requires evidence and licences for each entry | Same, tag legend and AGENTS.md | E | High |
 | E-93 | The list carries an explicit legal warning: reverse engineering is governed by local law, licences and terms of service | Same, front matter | E | High |
 | E-94 | A precedent for this class of work: a Claude Slides front-end deobfuscation that became a source-available editor (baocut) | Same, "Most shared" table | E | Medium |
+| E-95 | Registry availability for candidate names: `vernier` taken on npm (0.1.2) and PyPI; `ammeter` a 0.0.1 npm stub, free on PyPI and GitHub; `galvo` free on all three; `cathode` 1.0.1, `phosphor` 0.7.1, `plumbline` 10.0.9 all taken on npm | `npm view`, `https://pypi.org/pypi/<name>/json`, `gh api repos/<name>` | Own check | High (registry state on the date) |
 
 ## Deliberate uncertainties
 

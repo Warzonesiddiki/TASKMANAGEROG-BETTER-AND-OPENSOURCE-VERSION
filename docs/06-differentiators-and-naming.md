@@ -51,17 +51,19 @@
 
 Criteria, in order: pronounceable in one try; short; not a trademark in the same class (software/system utilities); free npm, PyPI and GitHub org as far as we can check; not a pun that ages badly; survives a logo.
 
-| Candidate | Why it fits | Collision check (2026-10-26) | Verdict |
-| --- | --- | --- | --- |
-| **Vernier** *(working title)* | A vernier scale reads a measurement more precisely than the main scale — exactly the pitch | npm `vernier` taken, PyPI taken, GitHub org `vernier` likely taken; **Vernier Software & Technology** is a long-standing education-tech brand → trademark risk in software | Good metaphor, risky mark |
-| **Ammeter** | Measures current; the product measures what is happening *now*; short, real word | Not yet checked in depth | Strong candidate |
-| **Cathode** | The phosphor heritage (VFD/CRT) without borrowing TMOG's look; evokes "the screen that tells you" | npm and PyPI taken (`cathode` 1.0.1); GitHub org likely taken | Nice, crowded |
-| **Phosphor** | Direct nod to the meter aesthetic | npm taken, PyPI taken | Crowded |
-| **Plumbline** | A tool for finding what is true about a structure; a nod to the author's name without using it | `plumb` is crowded in npm; `plumbline` less so | Charm, but too cute |
-| **Tach** | Tachometer; short, punchy; developer-friendly | `tach` is a real Python dependency tool → confusion | Reject |
-| **Galvo** | Galvanometer, the moving-needle instrument | Short, unusual, probably free | Good fallback |
+Checks below are registry lookups, not trademark searches: `npm view`, the PyPI JSON API and `gh api repos/<name>`. A taken bare npm name is **not** fatal — a scoped package (`@name/daemon`) is available even when `name` is occupied.
 
-**Recommendation.** Keep **Vernier** as the internal working title for this dossier (stable links), but **do not ship it** until a trademark search clears class 9/42. **Ammeter** is the leading alternative: it is the only candidate whose meaning is *literally* the product's job, it is a common noun with no dominant software brand, and `ammeter` reads well in a CLI (`ammeter watch`, `ammeter doctor`).
+| Candidate | Why it fits | Registry check (2026-10-26) | Verdict |
+| --- | --- | --- | --- |
+| **Vernier** *(working title)* | A vernier scale reads a measurement more precisely than the main scale — exactly the pitch | npm `vernier` 0.1.2 and PyPI taken; GitHub `vernier` free. **Vernier Software & Technology** is a long-standing education-tech brand → trademark risk in software | Good metaphor, risky mark |
+| **Ammeter** | Measures current; the product measures what is happening *now*; short, real word, works in a CLI (`ammeter watch`) | npm `ammeter` is a stub at 0.0.1; PyPI free; GitHub free. No dominant software brand found | **Leading candidate** |
+| **Galvo** | Galvanometer, the moving-needle instrument; unusual, short, memorable | npm free, PyPI free, GitHub free | **Strong fallback** |
+| **Cathode** | The phosphor heritage (VFD/CRT) without borrowing the original's look | npm 1.0.1 and PyPI taken; GitHub free | Crowded |
+| **Phosphor** | Direct nod to the meter aesthetic | npm 0.7.1 and PyPI taken | Crowded |
+| **Plumbline** | A tool for finding what is true about a structure; a nod to the author's surname without using it | npm 10.0.9 and PyPI taken | Charm, but crowded and cute |
+| **Tach** | Tachometer; short, developer-friendly | `tach` is an established Python dependency tool → confusion | Reject |
+
+**Recommendation.** Keep **Vernier** as the internal working title for this dossier (stable links, and the metaphor is the best of the set), but **do not ship it** until a trademark search clears class 9/42. **Ammeter** is the leading ship candidate: its meaning is literally the product's job, the namespace is clear on PyPI and GitHub, and the npm collision is a stub that a scope sidesteps. **Galvo** is the fallback if a search finds an instrument brand using "ammeter" in software.
 
 Naming rules regardless of the choice:
 
